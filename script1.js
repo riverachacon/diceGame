@@ -45,7 +45,7 @@ function computerTurn() {
     }
 
     function computerRoll() {
-      // check if the computer's turn should continue
+      // check if the computers turn should continue
       if (computerCurrentScore < 12 && !playerActive && !winner) {
         let diceNumber = rollDice();
 
@@ -54,7 +54,7 @@ function computerTurn() {
           computerCurrentScore = 0;
           document.querySelectorAll('.current-score')[1].textContent =
             computerCurrentScore;
-          playerActive = true; // end computer's turn
+          playerActive = true; // end computers turn
           clearInterval(diceRollInterval); // stop further rolls
           highlightPlayer();
           document.querySelectorAll('.btn')[1].disabled = false;
@@ -72,7 +72,7 @@ function computerTurn() {
           console.log('Computer current score is: ', computerCurrentScore);
         }
       } else {
-        // adding current score to total score after reaching the desired outcome (12)
+        // adding current score to total score after reaching  >12
         computerTotalScore = computerTotalScore + computerCurrentScore;
         document.querySelectorAll('.score')[1].textContent = computerTotalScore;
 
@@ -94,7 +94,7 @@ function computerTurn() {
       }
     }
 
-    // initiate rolling every second (1000ms)
+    // initiate rolling every second (1.5sec)
     diceRollInterval = setInterval(computerRoll, 1500);
   }
 }
@@ -146,7 +146,7 @@ document
   .querySelectorAll('.btn')[2]
   .addEventListener('click', handleHoldButton);
 
-// Reset button handler
+// reset button handler
 function handleReset() {
   document.querySelectorAll('.btn')[1].disabled = false;
   document.querySelectorAll('.btn')[2].disabled = false;
