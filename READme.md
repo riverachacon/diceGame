@@ -1,5 +1,9 @@
 # Dice Game
 
+## link
+
+[Click here](https://riverachacon.github.io/diceGame/) to go to the game
+
 ## Description
 
 This is a simple dice game where players, you and the computer take turns rolling a die to accumulate points. The goal is to be the first player to reach a total score of 100 points. If a player rolls a 1, their current score resets, and it's the other player's turn. players can also choose to "hold" and save their current score to their total score. The game can be reset at any time.
