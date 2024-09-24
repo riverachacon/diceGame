@@ -13,7 +13,8 @@ This is a simple dice game where players, you and the computer take turns rollin
 
 Winning: The first player to reach a total score of 100 wins the game! and you can start a new game by clicking the "Reset" button.
 
-Features
+## Features
+
 Two-player turn-based gameplay.
 Players can roll or hold to accumulate points.
 A player wins when their total score reaches 100.
