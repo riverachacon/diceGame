@@ -33,7 +33,7 @@ function highlightPlayer() {
 // computer turn
 
 function computerTurn() {
-  // disable roll and hold buttons after the winner is declared
+  // disable roll and hold buttons when computers turn
   document.querySelectorAll('.btn')[1].disabled = true;
   document.querySelectorAll('.btn')[2].disabled = true;
 
